@@ -1,29 +1,32 @@
 {
   "schemaVersion": 1,
-  "id": "modid",
+  "id": "pj-magic",
   "version": "${version}",
 
-  "name": "Example Mod",
-  "description": "This is an example description! Tell everyone what your mod is about!",
+  "name": "PJ Magic",
+  "description": "Mod about magic and stuff",
   "authors": [
-    "Me!"
+    "PanJohnny"
   ],
   "contact": {
-    "homepage": "https://fabricmc.net/",
-    "sources": "https://github.com/FabricMC/fabric-example-mod"
+    "homepage": "https://panjohnny.vercel.app/projects/p-magicmod",
+    "sources": "https://github.com/PanJohnny/MagicMod"
   },
 
-  "license": "CC0-1.0",
-  "icon": "assets/modid/icon.png",
+  "license": "MIT",
+  "icon": "assets/pj_magic/icon.png",
 
   "environment": "*",
   "entrypoints": {
     "main": [
-      "net.fabricmc.example.ExampleMod"
+      "com.panjohnny.magic.PJMagic"
+    ],
+    "client": [
+      "com.panjohnny.magic.PJMagicClient"
     ]
   },
   "mixins": [
-    "modid.mixins.json"
+    "pj-magic.mixins.json"
   ],
 
   "depends": {
